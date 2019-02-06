@@ -139,9 +139,9 @@ def problem1(n):
     # and THEN try the full-credit version.
     # As always, CONTINUE to the next problem if you are STUCK on this one.
     # -------------------------------------------------------------------------
-    for k in range(n):
-        if fibonacci(k+1) > n:
-            return k+1
+    for k in range(n**2):
+        if fibonacci(k+1) >= n:
+            return fibonacci(k)
 
 ###############################################################################
 # Our tests use the following to print error messages in red.
