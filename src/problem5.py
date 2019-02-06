@@ -148,6 +148,16 @@ def problem5(seq_of_seq):
     # TODO: 2. Implement and test this function.
     #          Tests have been written for you (above).
     # -------------------------------------------------------------------------
+    a = []
+    b = 0
+    for k in range(len(seq_of_seq)):
+        sub = seq_of_seq[k]
+        for j in range(1, len(sub)):
+            b = sub[j-1]
+            if sub[j] > b:
+                b = sub[j]
+            a = a + [b]
+    return a
 
 
 ###############################################################################
