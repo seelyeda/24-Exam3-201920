@@ -3,9 +3,9 @@ Exam 3, problem 2.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Dave Seelye.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -80,7 +80,14 @@ def shape(n):
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
     ####################################################################
-
+    for k in range(n):
+        for j in range(n - k):
+            print(k+1, end='')
+        for j in range(1):
+            print('*', end='')
+        for j in range(k):
+            print(j+1, end='')
+        print()
 
 # ----------------------------------------------------------------------
 # Calls  main  to start the ball rolling.
